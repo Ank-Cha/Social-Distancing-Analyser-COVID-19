@@ -35,4 +35,4 @@ Deploying it on current surveillance systems and drones used by police to monito
 * Run social_distancing_analyser.py
 
 ### Credits:
-### A big thanks to Ardian Rosebrock (www.pyimagesearch.com) for CV tutorial on detection.
+##### A big thanks to Ardian Rosebrock (www.pyimagesearch.com) for CV tutorial on detection.
