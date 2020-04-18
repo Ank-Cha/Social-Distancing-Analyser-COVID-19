@@ -10,7 +10,8 @@ Deploying it on current surveillance systems and drones used by police to monito
   ### It took me time and effort to code it. I would really appreciate if you give it a star.
 #### For business applications and other purposes please contact me: mr.skilled.coder@gmail.com
 
-Check the result:
+#### Result:
+
 ![](output.gif)
 
 ## Features:
