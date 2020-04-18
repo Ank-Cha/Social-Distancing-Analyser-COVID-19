@@ -8,7 +8,6 @@ Deploying it on current surveillance systems and drones used by police to monito
 
   ### Please fork the repository and credit me if you want to use any part it for education.
   ### It took me time and effort to code it. I would really appreciate if you give it a star.
-#### For business applications and other purposes please contact me: mr.skilled.coder@gmail.com
 
 #### Result:
 
