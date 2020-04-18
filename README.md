@@ -6,7 +6,7 @@ An AI tool to prevent spreading of coronavirus (COVID-19) by using computer visi
 Social Distancing Analyser automatically detects the extent to which social distancing protocols are followed in the area.
 Deploying it on current surveillance systems and drones used by police to monitor large areas can help to prevent coronavirus by allowing automated and better tracking of activities happening in the area. It shows analytics of the area in real time. It can also be used to alert police in case of considerable violation of social distancing protocols in a particular area. 
 
-  ### Please fork the repository and credit me if you want to use any part it for education.
+  ### Please fork the repository and give credits if you use any pat of it.
   ### It took me time and effort to code it. I would really appreciate if you give it a star.
 
 #### Result:
