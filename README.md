@@ -1,14 +1,16 @@
 # Social-Distancing-Analyser-wrt.-COVID-19
 An AI tool to prevent spreading of coronavirus (COVID-19) by using computer vision on video surveillance.
 
-## For education purpose only
+## For education purpose only 
 
 Social Distancing Analyser automatically detects the extent to which social distancing protocols are followed in the area.
 Deploying it on current surveillance systems and drones used by police to monitor large areas can help to prevent coronavirus by allowing automated and better tracking of activities happening in the area. It shows analytics of the area in real time. It can also be used to alert police in case of considerable violation of social distancing protocols in a particular area. 
 
-  ### Please fork the repository and give credits if you use any pat of it.
-  ### It took me time and effort to code it. I would really appreciate if you give it a star.
-
+  ### Please fork the repository and give credits if you use any part of it.
+  ## It took me time and effort to code it. I would really appreciate if you give it a star.
+  
+## SOME PEOPLE ARE STALING MY WORK AD SHOWING IT AS THEY WROTE IT, POSTING YOUTUBE VIDEOS TO MAKE MONEY like him (https://www.youtube.com/watch?v=E4VivOuoCAw&t=1s). HELP ME TO TEACH PEOPLE LIKE HIM A LESSON! 
+ 
 #### Result:
 
 ![](output.gif)
