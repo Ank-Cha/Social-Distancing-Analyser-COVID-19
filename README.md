@@ -14,10 +14,6 @@ Deploying it on current surveillance systems and drones used by police to monito
 
 ![](output.gif)
 
-## Current known FRAUDS who stole the code and are advertising it as their own without forking or giving credits.
-* Yaswanth Sai Palaghat
-  - github: https://github.com/yaswanthpalaghat/Social-Distance-Analyser
-  - youtube: https://www.youtube.com/watch?v=E4VivOuoCAw
 ## Features:
 * Get the areal time nalytics such as:
    - Number of people in a particular area
