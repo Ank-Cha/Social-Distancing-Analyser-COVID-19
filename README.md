@@ -11,7 +11,7 @@ Deploying it on current surveillance systems and drones used by police to monito
   ### Please fork the repository and give credits if you use any part of it. :slightly_smiling_face:
   ## It took me time and effort to code it.
   ## I would really appreciate if you give it a star. :star:
-  ## YOU ARE NOT ALLOWED TO MONETIZE THIS CODE IN ANY FORM.(Not even youtube)
+  ## YOU ARE NOT ALLOWED TO COMMERCIALIZE OR MONETIZE THIS CODE IN ANY FORM.(Not even youtube)
  
 #### Result:
 
