@@ -9,7 +9,8 @@ Social Distancing Analyser automatically detects the extent to which social dist
 Deploying it on current surveillance systems and drones used by police to monitor large areas can help to prevent coronavirus by allowing automated and better tracking of activities happening in the area. It shows analytics of the area in real time. It can also be used to alert police in case of considerable violation of social distancing protocols in a particular area. 
 
   ### Please fork the repository and give credits if you use any part of it. :slightly_smiling_face:
-  ## It took me time and effort to code it. I would really appreciate if you give it a star. :star:
+  ## It took me time and effort to code it.
+  ## I would really appreciate if you give it a star. :star:
   ## YOU ARE NOT ALLOWED TO MONETIZE THIS CODE IN ANY FORM.(Not even youtube)
  
 #### Result:
