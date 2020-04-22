@@ -13,9 +13,12 @@ Deploying it on current surveillance systems and drones used by police to monito
   ## I would really appreciate if you give it a star. :star:
   ## YOU ARE NOT ALLOWED TO COMMERCIALIZE OR MONETIZE THIS CODE IN ANY FORM.(Not even youtube)
  
-#### Result:
+#### v1.0 output:
 
 ![](output.gif)
+
+#### v2.0 output:
+![](op.gif)
 
 ## Features:
 * Get the areal time nalytics such as:
