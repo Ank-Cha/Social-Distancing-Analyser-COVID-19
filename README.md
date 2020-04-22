@@ -31,7 +31,7 @@ Deploying it on current surveillance systems and drones used by police to monito
 ## Things needed to be improved :
 * ~~Auto-calibration [For the given sample video, I've calibrated the model by simulating a 3D depth factor based on the camera position and orientation.]~~ (Check out v2.0)
 * Faster processing
-
+#### Please Note: angle factor is needed to be set between 0 to 1 for v2.0 according to the angle of camera (move towards one as angle becomes verticle)
 ## Installation:
 * Fork the repository and download the code.
 * Download the following files and place it in the same directory
