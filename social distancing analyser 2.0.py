@@ -8,7 +8,7 @@ thresh = 0.5
 # vname=""
 vname=input("Video name in videos folder:  ")
 if(vname==""):
-    vname="Town.mp4"
+    vname="video.mp4"
 vid_path = "./videos/"+vname
 angle_factor = 0.8
 H_zoom_factor = 1.2
