@@ -39,7 +39,7 @@ Deploying it on current surveillance systems and drones used by police to monito
    - https://pjreddie.com/media/files/yolov3.weights
 * For slower CPUs, use yolov3-tiny (link in the code comments)
 * Install all the dependenices
-* Run social_distancing_analyser.py
+* Run social_distancing_analyser.py or social_distancing_analyser 2.0.py
 
 ### Credits:
 ##### A big thanks to Ardian Rosebrock (www.pyimagesearch.com) for CV tutorial on detection.
