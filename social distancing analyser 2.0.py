@@ -8,7 +8,7 @@ thresh = 0.5
 # vname=""
 vname=input("Video name in videos folder:  ")
 if(vname==""):
-    vname="video.mp4"
+    vname="Town.mp4"
 vid_path = "./videos/"+vname
 angle_factor = 0.8
 H_zoom_factor = 1.2
@@ -71,6 +71,7 @@ ln = net.getLayerNames()
 ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 FR=0
 vs = cv2.VideoCapture(vid_path)
+# vs = cv2.VideoCapture(0)  ## USe this if you want to use webcam feed
 writer = None
 (W, H) = (None, None)
 
@@ -90,7 +91,7 @@ while True:
             FW = 1075
         FR = np.zeros((H+210,FW,3), np.uint8)
 
-        col = (0,0,0)
+        col = (255,255,255)
         FH = H + 210
     FR[:] = col
 
@@ -174,29 +175,29 @@ while True:
         kk = 0
 
         for i in idf:
-            cv2.line(FR,(0,H+1),(W,H+1),(255,255,255),2)
+            cv2.line(FR,(0,H+1),(FW,H+1),(0,0,0),2)
             cv2.putText(FR, "Social Distancing Analyser wrt. COVID-19", (210, H+60),
-                        cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
-            cv2.rectangle(FR, (20, H+80), (510, H+180), (170, 170, 170), 2)
+                        cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2)
+            cv2.rectangle(FR, (20, H+80), (510, H+180), (100, 100, 100), 2)
             cv2.putText(FR, "Connecting lines shows closeness among people. ", (30, H+100),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 0), 1)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (100, 100, 0), 2)
             cv2.putText(FR, "-- YELLOW: CLOSE", (50, H+90+40),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 1)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 170, 170), 2)
             cv2.putText(FR, "--    RED: VERY CLOSE", (50, H+40+110),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
             # cv2.putText(frame, "--    PINK: Pathway for Calibration", (50, 150),
             #             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (180,105,255), 1)
 
-            cv2.rectangle(FR, (535, H+80), (1060, H+140+40), (170, 170, 170), 2)
+            cv2.rectangle(FR, (535, H+80), (1060, H+140+40), (100, 100, 100), 2)
             cv2.putText(FR, "Bounding box shows the level of risk to the person.", (545, H+100),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 0), 1)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (100, 100, 0), 2)
             cv2.putText(FR, "-- DARK RED: HIGH RISK", (565, H+90+40),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 150), 1)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 150), 2)
             cv2.putText(FR, "--   ORANGE: LOW RISK", (565, H+150),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 120, 255), 1)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 120, 255), 2)
 
             cv2.putText(FR, "--    GREEN: SAFE", (565, H+170),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 150, 0), 2)
 
             
             tot_str = "TOTAL COUNT: " + str(total_p)
@@ -205,9 +206,9 @@ while True:
             safe_str = "SAFE COUNT: " + str(safe_p)
 
             cv2.putText(FR, tot_str, (10, H +25),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 0), 2)
             cv2.putText(FR, safe_str, (200, H +25),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 170, 0), 2)
             cv2.putText(FR, low_str, (380, H +25),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 120, 255), 2)
             cv2.putText(FR, high_str, (630, H +25),
