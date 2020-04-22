@@ -26,7 +26,7 @@ Deploying it on current surveillance systems and drones used by police to monito
 * Stores a video output for review
 
 ## Things needed to be improved :
-* Auto-calibration [For the given sample video, I've calibrated the model by simulating a 3D depth factor based on the camera position and orientation.]
+* ~~Auto-calibration [For the given sample video, I've calibrated the model by simulating a 3D depth factor based on the camera position and orientation.]~~ (Check out v2.0)
 * Faster processing
 
 ## Installation:
