@@ -18,7 +18,7 @@ Deploying it on current surveillance systems and drones used by police to monito
 ![](output.gif)
 
 #### v2.0 output:
-![](op.gif)
+![](op2.gif)
 
 ## Features:
 * Get the areal time nalytics such as:
