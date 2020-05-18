@@ -2,6 +2,7 @@ import time
 import math
 import cv2
 import numpy as np
+import os
 
 confid = 0.5
 thresh = 0.5
@@ -11,6 +12,10 @@ vname=input("Video name in videos folder (With Extension) :  ")
 if(vname==""):
     vname="Town.mp4"
 vid_path = "./videos/"+vname
+
+if not os.path.isfile(vid_path):
+    print("File not found..!!")
+    os._exit(1)
 
 angle_factor = 0.8
 H_zoom_factor = 1.2
@@ -87,6 +92,8 @@ print("2: High Accuracy, Slow Speed \n3: High Accuracy, Better Speed \n4: Medium
 gapFactor = int(input("Enter Gap Factor (1 to 4) : "))
 #gapFactor = 3    #number of frames gap to add to incease speed.
 
+print("Counting total Frames present in this video")
+
 while True:
     (grabbed, frame) = vs.read()
 
@@ -112,7 +119,8 @@ counter = 0
 # vs = cv2.VideoCapture(0)  ## USe this if you want to use webcam feed
 writer = None
 (W, H) = (None, None)
-
+oldlayer = None
+timeForEach = 0  #calculates time requires to process one frame (depends upon processor used)
 fl = 0
 q = 0
 while True:
@@ -156,6 +164,7 @@ while True:
         layerOutputs = net.forward(ln)
         oldlayer = layerOutputs
         end = time.time()
+        timeForEach = end-start
 
     boxes = []
     confidences = []
@@ -294,7 +303,7 @@ while True:
     frame = cv2.resize(frame, (720,480))
     #print("Saved Frame number is ",counter)
     completed = round(((counter*100)/frameCnt) , 2)
-    time_sec = round((((frameCnt-counter)*2)/gapFactor),2)
+    time_sec = round((((frameCnt-counter)*timeForEach)/gapFactor),2)
     #print("Completed ",completed," % \Estimated time is = ",time_sec)
     print("Completed {0} % Estimated remaining time is = {1} Sec".format(completed,time_sec))
     writer.write(frame)
