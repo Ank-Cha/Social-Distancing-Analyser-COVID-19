@@ -52,4 +52,5 @@ Deploying it on current surveillance systems and drones used by police to monito
   journal = {arXiv},
   year={2018}
 }
+
 copyright © 2020 Ankush Chaudhari | All rights reserved
