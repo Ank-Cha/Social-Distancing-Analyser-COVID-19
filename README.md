@@ -45,7 +45,6 @@ Deploying it on current surveillance systems and drones used by police to monito
 * Run social_distancing_analyser.py or social_distancing_analyser 2.0.py
 
 ### Credits:
-##### A big thanks to Ardian Rosebrock (www.pyimagesearch.com) for CV tutorial on detection.
 
 @article{yolov3,
   title={YOLOv3: An Incremental Improvement},
@@ -53,3 +52,4 @@ Deploying it on current surveillance systems and drones used by police to monito
   journal = {arXiv},
   year={2018}
 }
+copyright © 2020 Ankush Chaudhari | All rights reserved
