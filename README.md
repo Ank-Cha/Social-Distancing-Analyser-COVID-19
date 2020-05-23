@@ -24,7 +24,7 @@ Deploying it on current surveillance systems and drones used by police to monito
 
 ### V3.0 output (code coming soon)
 ## Features:
-* Get the areal time nalytics such as:
+* Get the areal time analytics such as:
    - Number of people in a particular area
    - Number of people in high risk
    - The extent of risk to a particular person.
